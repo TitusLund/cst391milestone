@@ -1,6 +1,5 @@
 import { Request, RequestHandler, Response } from 'express';
 import * as ProductDAO from '../db/productDAO';
-import { Product } from '../models/productModel'
 import { OkPacket } from 'mysql';
 
 export const allProducts: RequestHandler = async (req: Request, res: Response) => {
